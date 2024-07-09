@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - Education NGO</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "nav nav"
+                "header header"
+                "main-content sidebar"
+                "twin1 twin2"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            grid-area: header;
+            background: #008000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background: #444;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #FDF5E6;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .main-content {
+            grid-area: main-content;
+            background-color: #F5F5F5
+            padding: 2rem;
+            color: white;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-image: url('sidebar.jpg');
+            padding: 2rem;
+            color: white;
+        }
+        .twin1 {
+            grid-area: twin1;
+            background-image: url('twin1.jpg');
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .twin2 {
+            grid-area: twin2;
+            background-image: url('twin2.jpg');
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        footer {
+            grid-area: footer;
+            background: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #008000;
+        }
+        form {
+            background: #333;
+            padding: 2rem;
+            color: white;
+            margin: 2rem 0;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        form button {
+            padding: 0.7rem 2rem;
+            background-color: #008000;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="ourwork.html">Our Work</a>
+            <a href="donation.html">Donation</a>
+        </nav>
+        <header>
+            <h1>OUR WORK</h1>
+        </header>
+        <main class="main-content.jpg">
+            <article>
+                <h2>ORGANIZATION ACTIVITIES</h2>
+                <ul>
+                    <li>Academic programs and workshops</li>
+                    <li>Research and development programs</li>
+                    <li>Health and wellness awards</li>
+                    <li>Professional development and teacher training</li>
+                    <li>Student leadership and service projects</li>
+                </ul>
+            </article>
+            <section>
+                <h2>AWARDS FOR EXTRAORDINARY ACHIEVEMENTS</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Awards</th>
+                            <th>Achievements</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Academic excellence award</td>
+                            <td>Ranked among the top schools in state or national assessments.</td>
+                            <td>3 months</td>
+                        </tr>
+                        <tr>
+                            <td>Educational research award</td>
+                            <td>Outstanding research projects and best educational presentation</td>
+                            <td>4 months</td>
+                        </tr>
+                        <tr>
+                            <td>Mental health initiative award</td>
+                            <td>Recognized for outstanding mental health programs and support.</td>
+                            <td>3 months</td>
+                        </tr>
+                        <tr>
+                            <td>Outstanding educator award</td>
+                            <td>Awarded to an outstanding teacher for excellence in teaching.</td>
+                            <td>2 months</td>
+                        </tr>
+                        <tr>
+                            <td>Student leadership award</td>
+                            <td>Students honoured for exceptional leadership and community involvement.</td>
+                            <td>2 months</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>CONTACT US</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <section>
+                <h4>ELECTIVE SUBJECTS</h4>
+                <ul>
+                    <div>1) Leadership skills development</div>
+                    <div>2) Cybersecurity programming</div>
+                    <div>3) Effective communication</div>
+                    <div>4) Software development</div>
+                    <div>5) Business management</div>
+                </ul>
+            </section>
+        </aside>
+        <div class="twin1">
+            <section>
+                <h3>LEARNING OUTCOMES</h3>
+                <p>Learning outcomes describe the measurable skills, abilities, knowledge, or values that students should be able to demonstrate as a result of completing a course. Students will be able to learn leadership skills, basic computer skills, communication skills, technical tasks skills, and professional development.</p>
+            </section>
+        </div>
+        <div class="twin2">
+            <section>
+                <h3>ADDITIONAL COURSES</h3>
+                <p>Additional courses are extra courses that are not mandatory for the students. These additional courses are a way to gain more knowledge on subjects that might interest you.</p>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 EDUCATION NGO</p>
+        </footer>
+    </div>
+</body>
+</html>

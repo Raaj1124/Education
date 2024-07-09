@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url('education.avif'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main-content sidebar"
+        "table-section sidebar"
+        "contact-form contact-form"
+        "twin1 twin2"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+    background: #008000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background: #444;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #FDF5E6;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-image: url('main-content.jpg');
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+}
+
+.table-section {
+    grid-area: table-section;
+    background-color: #333;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.table-section h2 {
+    color: #fff;
+}
+
+.table-section table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse; /* Ensure borders collapse into a single border */
+}
+
+.table-section th, .table-section td {
+    padding: 10px;
+    border: 1px solid #fff; /* Define border properties for th and td */
+    color: #fff; /* Set text color for th and td */
+}
+
+.table-section th {
+    background-color: #008000;
+    color: #fff;
+}
+
+.table-section tbody tr:nth-child(even) {
+    background-color: #666;
+}
+
+.table-section tbody tr:hover {
+    background-color: #888;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-image: url('sidebar.jpg');
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+}
+
+.twin1 {
+    grid-area: twin1;
+    background-image: url('twin1.jpg');
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.twin2 {
+    grid-area: twin2;
+    background-image: url('twin2.jpg');
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    grid-area: contact-form;
+    background: #333;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #006400;
+}
+
+.contact-form p {
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+footer {
+    grid-area: footer;
+    background: #006400;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+ 

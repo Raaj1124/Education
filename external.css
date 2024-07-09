@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FDF5E6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main-content sidebar"
+        "twin1 twin2"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background: #008000;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background: #444;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 2rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 2rem;
+}
+
+.twin1 {
+    grid-area: twin1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.twin2 {
+    grid-area: twin2;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background: #006400;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #FFFFFF;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #008000;
+}
+
+form {
+    background: #333;
+    padding: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #FFFFFF;
+    background-color: #444;
+    color: #FFFFFF;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 0.7rem 2rem;
+    background-color: #008000;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #006400;
+}

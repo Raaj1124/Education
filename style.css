@@ -1,0 +1,79 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #FDF5E6;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "main-content sidebar"
+                "twin1 twin2"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: -10px;
+
+        }
+        header {
+            grid-area: header;
+            background: #00008B;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            margin-top: -20px;
+        }
+        nav {
+            background: #444;
+            padding: 0rem;
+            text-align: center;
+            grid-area: a;
+        }
+        nav a {
+            color: #FDF5E6;
+            margin: 0 0rem;
+            text-decoration: none;
+        }
+        .main-content {
+            grid-area: main-content;
+            background: #2ecc71;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background: #800080;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .twin1 {
+            grid-area: twin1 ;
+            background: #FA8072;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .twin2 {
+            grid-area: twin2;
+            background: #e67e22;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        footer {
+            grid-area: footer;
+            background: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
